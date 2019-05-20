@@ -1,0 +1,17 @@
+.btn-principal {
+    background-color: $roxo;
+    color: $branco;
+    &:hover, &:active, &:focus {
+        background-color: $roxo;
+        color: $amarelo;
+    }
+}
+.btn-amarelo {
+    background-color: transparent;
+    color: $amarelo;
+    border: 2px solid $amarelo;
+    &:hover {
+        background-color: $amarelo;
+        color: $roxo;
+    }
+}

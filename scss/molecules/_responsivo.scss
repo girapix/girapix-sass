@@ -1,0 +1,14 @@
+ul.sidenav {
+    @include gradient(90deg, $azul, $roxo);
+    opacity: .9;
+    width: 75%;
+    padding-top: 20vh;
+    li {
+        width: 100%;
+        padding: 2vh;
+        a {
+            color: $branco;
+            @include font-size(20px);
+        }
+    }
+}

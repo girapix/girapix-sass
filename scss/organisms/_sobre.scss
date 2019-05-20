@@ -1,0 +1,53 @@
+.about {
+    min-height: 100%;
+    background: {
+        image: url('./../assets/institucional/bg-padronagem.png');
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+    .about-itens {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 100px 0 40px;
+        .girafa {
+            margin-bottom: 40px;
+            @include mq('desktop'){
+                margin-bottom: 0;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .explicativo {
+            h1 {
+                @include font-size(25px);
+                font-weight: $bold;
+                @include mq('desktop'){
+                    @include font-size(40px);
+                }
+            }
+            h2 {
+                @include font-size(25px);
+                font-weight: $bold;
+                margin: 8vh 0 4vh;
+                @include mq('desktop'){
+                    @include font-size(35px);
+                }
+            }
+            p {
+                .azul {
+                    color: $azul;
+                }
+                &:nth-last-child(2) {
+                    margin: 8vh 0;
+                }
+            }
+            h3 {
+                font-weight: $bold;
+            }
+        }
+    }
+}

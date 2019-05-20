@@ -1,0 +1,17 @@
+.brand-logo {
+    font-family: 'Khand', sans-serif;
+    font-size: 2rem;
+    color: branco;
+    &:hover {
+        color: $branco;
+    }
+    height: 80px;
+    img {
+        height: 60px;
+        @include vertical-center;
+    }
+}
+.logo-text {
+    font-size: 0;
+    margin: 0;
+}

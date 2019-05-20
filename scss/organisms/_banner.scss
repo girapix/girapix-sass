@@ -1,0 +1,50 @@
+.banner {
+    // background-color: $azul;
+    min-height: 100vh;
+    height: 100vh;
+    padding-top: 70px;
+    background: {
+        image: url('./../assets/institucional/bg-azul.jpg');
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+    }
+    .container {
+        @include vertical-center();
+        margin-bottom: 0;
+        .textos {
+            margin-bottom: 2vh;
+            @include mq('phone') {
+                margin: 4vh 0;
+            }
+            h1 {
+                color: $amarelo;
+                font-size: 1.8rem;
+                margin: 2vh 0;
+                font-weight: 600;
+                @include mq('tablet-small') {
+                    margin: 2vh 0 4vh;
+                }
+                @include mq('desktop') {
+                    @include font-size(50px);
+                    margin: 2vh 0 4vh;
+                }
+            }
+            h2 {
+                font-family: 'Khand', sans-serif;
+                color: $branco;
+                @include font-size(18px);
+                @include mq('tablet-small') {
+                    @include font-size(20px);
+                }
+            }
+            h3 {
+                color: $branco;
+                @include font-size(18px);
+                @include mq('tablet-small') {
+                    @include font-size(20px);
+                }
+            }
+        }
+    }
+}

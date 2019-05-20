@@ -1,0 +1,74 @@
+@import './../atoms/titulo';
+.depoimentos {
+    margin-top: 100px;
+    height: 100%;
+    background: {
+        image: url('./../assets/institucional/bgs-depoimentos.png');
+        size: cover;
+        position: top center;
+        repeat: no-repeat;
+    }
+    @include mq('desktop') {
+        background: {
+            image: url('./../assets/institucional/bg-depoimentos.png');
+            size: cover;
+            position: top center;
+            repeat: no-repeat;
+        }
+    }
+    .container {
+        
+        .depoimentos-content {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .depoimentos-img {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+                @include mq('desktop') {
+                    width: 30%;
+                    margin-left: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .depoimentos-texto {
+                margin-top: 80px;
+                @include mq('desktop'){
+                    margin-top: 0;
+                }
+                .aspas {
+                    @include font-size(80px);
+                    line-height: 0;
+                    height: 0;
+                    position: absolute;
+                    color: $cinza;
+                    @include mq('desktop'){
+                        @include font-size(150px);
+                    }
+                }
+                p {
+                    @include font-size(20px);
+                    color: $sombra;
+                    @include mq('desktop'){
+                        @include font-size(30px);
+                    }
+                }
+                .cliente {
+                    float: right;
+                    @include font-size(15px);
+                    font-weight: $semi;
+                    color: $cinza;
+                    padding: 1vh 0;
+                    @include mq('desktop'){
+                        @include font-size(20px);
+                    }
+                }
+            }
+        }
+    }
+}

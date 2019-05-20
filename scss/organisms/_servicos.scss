@@ -1,0 +1,60 @@
+.servicos {
+    height: 100%;
+    margin-top: 100px;
+    .container {
+        margin-bottom: 0;
+        .servicos-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 2vh;
+            .servicos-item {
+                text-align: center;
+                img {
+                    width: 50%;
+                }
+                h2 {
+                    @include font-size(20px);
+                    font-weight: $bold;
+                    margin: 2vh 0 4vh;
+                }
+                &:nth-child(1) {
+                    h2 {
+                        color: $roxo;
+                    }
+                }
+                &:nth-child(2) {
+                    h2 {
+                        color: $azul;
+                    }
+                }
+                &:nth-child(3) {
+                    h2 {
+                        color: $amarelo;
+                    }
+                }
+                &:nth-child(4) {
+                    h2 {
+                        color: $dourado;
+                    }
+                }
+            }
+        }
+        .sobre {
+            text-align: center;
+            margin-top: 8vh;
+            h1 {
+                @include font-size(25px);
+                font-weight: $bold;
+                @include mq('desktop'){
+                    @include font-size(30px);
+                }
+            }
+            p {
+                @include font-size(20px);
+                color: $sombra;
+                margin: 4vh 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.titulo {
+    text-align: center;
+    h1 {
+        @include font-size(25px);
+        font-weight: $bold;
+        @include mq('desktop'){
+            @include font-size(30px);
+        }
+    }
+    .amarelo {
+        color: $amarelo !important;
+    }
+}

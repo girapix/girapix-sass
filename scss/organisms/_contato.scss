@@ -1,0 +1,33 @@
+@import './../atoms/titulo';
+@import './../atoms/input';
+.contato {
+    height: 100%;
+    background-color: $roxo;
+    margin-top: 100px;
+    padding-top: 40px;
+    .contatos {
+        border-bottom: 1x solid $amarelo;
+        .col {
+            text-align: left;
+            .amarelo {
+                color: $amarelo;
+            }
+            p {
+                color: $branco;
+            }
+        }
+    }
+    hr {
+        width: 80%;
+        border: 1px solid $amarelo;
+    }
+    .sociais {
+        margin-bottom: 0;
+        padding: 40px 0;
+        text-align: center;
+        .sociais-itens {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

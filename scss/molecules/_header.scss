@@ -1,0 +1,37 @@
+@import './../atoms/_logo.scss';
+
+header {
+    .navbar-fixed {
+        position: absolute;
+        height: 80px;;
+        line-height: 80px;;
+        z-index: 997;
+        .navbar {
+            height: 80px;;
+            line-height: 80px;;
+            background-color: transparent;
+            transition: background 0.5s linear;
+            .nav-wrapper {
+                ul {
+                    li {
+                        a {
+                            font-size: 1rem;
+                            font-weight: 600;
+                            &:hover {
+                                border-bottom: 1px solid $amarelo;
+                            }
+                        }
+                    }
+                }
+                .sidenav-trigger {
+                    font-size: 2rem;
+                    line-height: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        .nav-color {
+            background-color: rgba($azul, .9);
+        }
+    }
+}
