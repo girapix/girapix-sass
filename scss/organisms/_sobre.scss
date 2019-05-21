@@ -51,3 +51,19 @@
         }
     }
 }
+.sobre {
+    min-height: 100vh;
+    background: {
+        image: url('./../assets/institucional/bg-sobre.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    .padrao-sobre {
+        width: 50%;
+        float: right;
+        img {
+            width: 100%;
+        }
+    }
+}
